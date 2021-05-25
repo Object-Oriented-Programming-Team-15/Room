@@ -1,8 +1,8 @@
 
 public interface Roominter {
-	 //인터페이스
+	 //interface
 	 public void printRoom();
 	
-	 public void assignRoom();
+	 public void assignRoom(Member m);
 	 
 }
