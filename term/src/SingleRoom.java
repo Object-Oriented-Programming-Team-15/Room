@@ -41,4 +41,19 @@ public class SingleRoom extends Room implements Roominter{
 			System.out.println("Room " +this.getroomNumber()+ " is already Used");
 		this.setUsedassign();
 	}
+	
+	@Override
+	public void RoomUsing(int id) {
+		if(this.getUsedPolple() == id)
+			System.out.println("User" + id + " is already Using Room!");
+		else if(this.getAssignPeople() == id)
+			System.out.println("User" + id + " is already assigng Room!");
+		else
+		{
+			System.out.println("User" + id + " is can Use Single Room");
+			this.setUsedPolple(id);
+			this.setUsed(2);
+		}
+		System.out.println();
+	}
 }
