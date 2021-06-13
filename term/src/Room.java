@@ -2,7 +2,7 @@
 public class Room{
 	private int roomNumber;
 	private int capacity; //최대 인원
-	private int isUsed; //0> 사용x  1 > 예약 2 > 사용중 
+	private int isUsed; //0> 사용x  1 > 예약 2 > 사용중 3 > full
 	private int assignPeople;
 	private int usingPeople;
 	
